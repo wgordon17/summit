@@ -1,0 +1,55 @@
+ul.mustsee {
+  list-style-type: none;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.attendee {
+    -webkit-flex: 1 1 auto; /* Safari 6.1+ */
+    -ms-flex: 1 1 auto; /* IE 10 */
+    flex: 1 1 auto;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .2s ease-in-out;
+    margin-top: 20px;
+}
+
+.attendee-initials {
+    padding: 0;
+    width: 130px;
+    line-height: 130px;
+    height: 130px;
+}
+
+.attendee:hover {
+    transform: scale(1.05);
+}
+
+.attendee a:hover {
+    text-decoration: none;
+}
+
+.attendee-initials {
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.attendee-details {
+    color: #2f2f2f;
+}
+
+.attendee-name {
+    margin: 0;
+}
+
+.attendee-company {
+    margin: 0;
+    font-size: 12px;
+}

@@ -1,0 +1,6 @@
+RewriteEngine on
+
+# Rewrite http to https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
